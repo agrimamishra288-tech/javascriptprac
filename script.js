@@ -27,18 +27,14 @@
         // setTimeout(()=>(
         //     alert("Alert after 3 seconds)),3*1000)")
 //         // ))
-// let v=1
-//     const timerId=setInterval(()=>{
-//         console.log(v);
-//         v++
-//     },1000)
-// //console.logtimerid
-//         setTimeout(()=>{
-//             clearInterval(timerId)
-//         },10*1000)
+ let v=1
+    const timerId=setInterval(()=>{
+        console.log(v);
+        v++
+     },1000)
+ console.logtimerid
+        setTimeout(()=>{
+           clearInterval(timerId)
+     },10*1000)
 
 
-const container=document.getElementById("container");
-
-container.firstElementChild.style.background="red";
-container.lastElementChild.style.background="green";
