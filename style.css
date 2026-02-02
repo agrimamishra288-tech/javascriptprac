@@ -1,6 +1,16 @@
 .btn{
-    background-color: darkblue;
+    
     color:white;
     width: 100px;
-    height: 95px;
+    
+}
+
+li{
+    width:300 px;
+    background-color:tan;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 3px;
+
 }
