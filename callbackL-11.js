@@ -70,3 +70,6 @@ finishHomework(() => {
      lists.appendChild(li)
     input.value=""
     })
+
+    let card = document.querySelector(".card");
+    console.log(card.textContent);
