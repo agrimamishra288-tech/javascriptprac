@@ -10,66 +10,52 @@
 //     },2000);
 //     greet(print)
 
-    console.log("Starting Homework...");
+//     console.log("Starting Homework...");
 
-    setTimeout(() => {
-        console.log("Homework Completed");
-         console.log("starting dinner...");
+//     setTimeout(() => {
+//         console.log("Homework Completed");
+//          console.log("starting dinner...");
 
-    setTimeout(() => {
-        console.log("Dinner Completed");
-        console.log("getting ready to go out...");
+//     setTimeout(() => {
+//         console.log("Dinner Completed");
+//         console.log("getting ready to go out...");
 
-    setTimeout()(() => {
-        console.log("Going to the playground!");
-    }, 1000); //after dinner
+//     setTimeout()(() => {
+//         console.log("Going to the playground!");
+//     }, 1000); //after dinner
 
-}, 1500); //dinner time 
+// }, 1500); //dinner time 
 
-    },2000);//homework time
+//     },2000);//homework time
 
-function finishHomework(callback) {
-    console.log("Starting Homework");
-    setTimeout(() => {
-        console.log("Homework Completed");
-        callback();
-    }, 2000);   
-}   
+// function finishHomework(callback) {
+//     console.log("Starting Homework");
+//     setTimeout(() => {
+//         console.log("Homework Completed");
+//         callback();
+//     }, 2000);   
+// }   
 
-function eatDinner(callback) {
-    console.log("Starting Dinner");
-    setTimeout(() => {
-        console.log("Dinner Completed");
-        callback();
-    }, 1500); 
-}
-function goToPlayground(){
-    console.log("Going to the Playground!");
-}
-finishHomework(() => {
-    eatDinner(() => {
-        goToPlayground();
-    }); 
+// function eatDinner(callback) {
+//     console.log("Starting Dinner");
+//     setTimeout(() => {
+//         console.log("Dinner Completed");
+//         callback();
+//     }, 1500); 
+// }
+// function goToPlayground(){
+//     console.log("Going to the Playground!");
+// }
+// finishHomework(() => {
+//     eatDinner(() => {
+//         goToPlayground();
+//     }); 
+// });
+
+
+
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Button Clicked!");
 });
 
 
-
-
-
-    const input=document.querySelector("task")
-    const btn= document.querySelector(".btn")
-    const lists=document.querySelector(".list")
-
-    btn.addEventListener('click', (e)=>{
-        e.preventDefault()
-        const li= document.createElement('li')
-        const deleteButton=document.createElement('button')
-
-        deleteButton.innerText="Delete"
-        li.innerText = input.Value
-     lists.appendChild(li)
-    input.value=""
-    })
-
-    let card = document.querySelector(".card");
-    console.log(card.textContent);
