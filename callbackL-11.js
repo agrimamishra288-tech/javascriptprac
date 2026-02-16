@@ -58,4 +58,70 @@ document.getElementById("btn").addEventListener("click", function() {
     alert("Button Clicked!");
 });
 
+let card = document.querySelectorAll(".card");
+card.forEach(card => {
+console.log(card.textContent)
+})
+
+function orderFood(){
+    return new Promise(function(resolve,reject){
+        setTimeout(() => {
+            console.log("food ordered")
+            resolve("foodd ordered")
+        },1000)
+    })
+}
+
+function prepareFood(){
+    return new Promise(function(resolve,reject){
+        setTimeout(() => {
+            console.log("food prepared")
+            resolve("foodd prepared")
+        },1000)
+    })
+}
+
+function deliverFood(){
+return new Promise(function(resolve,reject){
+        setTimeout(() => {
+            console.log("food delivered")
+            resolve("foodd delivered")
+        },1000)
+    })
+}
+
+orderFood().then(data)=>{
+    console.log(data)
+    return prepareFood()
+}).then(data)=>{
+    console.log(data)
+    return deliverFood()
+}).then(data)=>{
+    console.log(data)
+}).catch(err)=>{
+    console.log(err)
+})
+async function order(){
+    const data=await orderFood()
+    console.log(data)
+    await prepareFood()
+    await deliverFood()
+}
+
+order()
+
+
+console.log("First line")
+try{
+    let age=19
+    if(age<18){
+        throw new Error("Access denied")
+    }
+}catch(Error){
+    console.log(error)
+}finally{
+    console.log("finally block")
+}
+console.log("Last line")
+
 
